@@ -327,7 +327,7 @@ public class ImagePickerDelegate
     String desctiption = methodCall.argument("description") == null ? "123" : methodCall.argument("description").toString();
 
     String filePath = CapturePhotoUtils.insertImage(activity.getContentResolver(), fileData, title, desctiption);
-
+    print("filePath 0 "+filePath);
     finishWithSuccess(filePath);
   }
 
