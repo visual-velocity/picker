@@ -40,7 +40,7 @@ public class CapturePhotoUtils {
 
         InputStream is = new BufferedInputStream(new ByteArrayInputStream(source));
         String mimeType = URLConnection.guessContentTypeFromStream(is);
-        print("Mimetype"+mimeType);
+        System.out.println("Mimetype"+mimeType);
         ContentValues values = new ContentValues();
         values.put(Images.Media.TITLE, title);
         values.put(Images.Media.DISPLAY_NAME, title);
